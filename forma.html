@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>testform</title>
+	</head>
+	<body>
+		<form method="post">
+		<h1>Отправка заявки на конференцию</h1>
+		<h2>Основные данные</h2>
+		<p><b>* Фамилия, имя, отчество:</b></p>
+			<input type="text" name="ФИО" size="55">
+		<p><b>Дата рождения:</b></p>
+			<input type="date" name="ФИО" size="55">
+		<p><b>Пол:</b></p>
+			<input type="radio" name="choice"> мужской
+			<input type="radio" name="choice"> женский
+		<h2>Данные для создания личного кабинета</h2>
+		<p><b>* Адрес эдектронной почты:</b></p>
+			<input type="email" name="mail" size="55">
+		<p><b>* Пароль для создания личного кабинета:</b></p>
+			<input type="password" name="password" size="55">
+		<p><b>* Подтверждение пороля:</b></p>
+			<input type="password" name="password" size="55">
+		<h2>Материалы для конференции</h2>
+		<p><b>* Тема доклада:</b></p>
+			<input type="text" name="topic" size="55">
+		<p><b>* Тезисы доклада :</b></p>
+			<textarea placeholder="Не более 1000 символов" cols="50" rows="12"></textarea>
+		<p><b>Файл презентации:</b></p>
+			<input type="file" name="file">
+		<h2>Дополнительный опции</h2>
+			<input id="hotel" type="checkbox"><label for="hotel">Проживание в отеле</label><br>
+			<input id="breakfast" checked type="checkbox"><label for="breakfast">Завтрак</label><br>
+			<input id="lunch" type="checkbox"><label for="lunch">Обед</label><br>
+			<input id="dinner" type="checkbox"><label for="dinner">Ужин</label><br><hr>
+			<input type="submit" name="send" value="Отправить"><hr>
+		</form>
+		<small>* Поля, отмеченные звездочкой, явяются обязательными для заполнения</small>
+	</body>
+</html>
