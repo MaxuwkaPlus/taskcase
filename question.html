@@ -4,8 +4,9 @@
 	var countrue = 0;
 	var countfalse = 0;
 	var name = prompt( "Пожалуйста, введите своё имя" );
+	//first question
 	var question1 = prompt("Здравствуйте, " + name + "!\n" + "Предлагаю вам сыграть в загадки! \n А первая загадка такова: Висит груша нельзя скушать, что это?");
-
+	
 	if(question1 == "лампочка" || question1 == "Лампочка"){
 		alert("Верный ответ!");
 		countrue++;
@@ -14,6 +15,7 @@
 			countfalse++
 		}
 
+	//second question
 	var question2 =prompt("Вторая загадка такова: музыкант, певец, рассказчик — а всего труба да ящик, что это?");
 
 	if(question2 == "Граммофон" || question2 == "грамофон"){
@@ -24,6 +26,7 @@
 			countfalse++
 		}
 
+	//third question
 	var question3 =prompt("Третья загадка такова: Речка спятила с ума — по домам пошла сама, что это?");
 
 	if(question3 == "Водопровод" || question3 == "водопровод"){
@@ -34,6 +37,7 @@
 			countfalse++
 		}
 
+	//fourth question
 	var question4 =prompt("Четвертая загадка такова: Из стены торчу, головой кручу, мою и пою целую семью, что это?");
 
 	if(question4 == "Водопроводный кран" || question4 == "Кран" || question4 == "кран"){
@@ -44,6 +48,7 @@
 			countfalse++
 		}
 
+	//fifth question
 	var question5 =prompt("Пятая загадка такова: Ах, не трогайте меня: Обожгу и без огня, что это?");
 
 	if(question5 == "Крапива" || question5 == "крапива"){
@@ -53,7 +58,7 @@
 		else{alert("Ответ неверный.")
 			countfalse++
 		}
-
+	//sum_true_n_false
 	alert(countrue + " - количество верных ответов.\n" + countfalse + " - количество неверных ответов\n" + "Спасибо за игру!");
 
 </script>
